@@ -56,7 +56,7 @@ export default function About() {
                 <div className="space-y-4">
                   <div className="card">
                     <h4 className="text-xl font-semibold text-white">Full Stack Developer</h4>
-                    <p className="text-gray-500">Company Name • 2022 - Present</p>
+                    <p className="text-gray-500"></p>
                     <p className="text-gray-500 mt-2">
                       Working on modern web applications using React, Next.js, and Node.js.
                     </p>
@@ -79,7 +79,7 @@ export default function About() {
               <div className="card">
                 <h3 className="text-xl font-semibold text-white mb-4">Interests</h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Web Development', 'UI/UX Design', 'Open Source', 'Photography'].map((interest) => (
+                  {['Web Development', 'UI/UX Design'].map((interest) => (
                     <span
                       key={interest}
                       className="px-4 py-2 bg-black text-white rounded-full border border-gray-800"

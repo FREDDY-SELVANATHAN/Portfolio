@@ -5,9 +5,24 @@ import Navigation from '../components/Navigation';
 
 export default function Contact() {
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/yourusername', icon: 'github' },
-    { name: 'LinkedIn', url: 'https://linkedin.com/in/yourusername', icon: 'linkedin' },
-    { name: 'Instagram', url: 'https://instagram.com/yourusername', icon: 'instagram' },
+    { 
+      name: 'GitHub', 
+      url: 'https://github.com/FREDDY-SELVANATHAN', 
+      icon: 'github',
+      color: 'hover:text-[#333]'
+    },
+    { 
+      name: 'LinkedIn', 
+      url: 'https://www.linkedin.com/in/freddy-selvanathan-7158222b7/', 
+      icon: 'linkedin',
+      color: 'hover:text-[#0077b5]'
+    },
+    { 
+      name: 'Instagram', 
+      url: 'https://www.instagram.com/l___freddy___l/', 
+      icon: 'instagram',
+      color: 'hover:text-[#e4405f]'
+    },
   ];
 
   return (
@@ -47,8 +62,8 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-semibold text-white mb-2">Contact Info</h3>
                   <div className="space-y-2">
-                    <p className="text-gray-500">Email: your.email@example.com</p>
-                    <p className="text-gray-500">Location: Your Location</p>
+                    <p className="text-gray-500">Email: freddyselvanathan@gmail.com</p>
+                    <p className="text-gray-500">Location: Chennai</p>
                   </div>
                 </div>
               </div>
@@ -56,14 +71,15 @@ export default function Contact() {
 
             <div className="card">
               <h3 className="text-xl font-semibold text-white mb-4">Connect with me</h3>
-              <div className="flex space-x-6">
+              <div className="flex items-center justify-center space-x-8">
                 {socialLinks.map((link) => (
                   <a
                     key={link.name}
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-3xl text-gray-500 hover:text-white transition-colors duration-300"
+                    className={`text-4xl text-white ${link.color} transition-colors duration-300 hover:scale-110 transform`}
+                    title={link.name}
                   >
                     <i className={`fab fa-${link.icon}`}></i>
                   </a>
