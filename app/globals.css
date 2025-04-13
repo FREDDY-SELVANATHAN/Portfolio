@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 17, 24, 39;
+  --card-bg: 31, 41, 55;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-400 hover:text-white transition-colors duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl font-bold mb-8 text-white;
+  }
+  
+  .card {
+    @apply bg-card rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-white text-gray-900 rounded-lg hover:bg-gray-200 transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 bg-gray-700 text-white rounded-lg hover:bg-gray-600 transition-colors duration-300;
+  }
+
+  .btn-accent {
+    @apply px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 transition-colors duration-300;
+  }
+}
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'); 
